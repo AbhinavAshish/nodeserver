@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="bower_components/materialize/css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="src/stylesheets/main.css"/>
+    <link type="text/css" rel="stylesheet" href="src/stylesheets/ol-btn-material.css"/>
+    <link type="text/css" rel="stylesheet" href="src/stylesheets/ol-popup.css"/>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/materialize/js/materialize.min.js"></script>
+    <script src="bower_components/jsonix/dist/Jsonix-all.js"></script>
+    <script src="bower_components/ogc-schemas/scripts/lib/OWS_1_0_0.js"></script>
+    <script src="bower_components/ogc-schemas/scripts/lib/OWS_1_1_0.js"></script>
+    <script src="bower_components/ogc-schemas/scripts/lib/WPS_1_0_0.js"></script>
+    <script src="bower_components/ogc-schemas/scripts/lib/WFS_1_0_0.js"></script>
+    <script src="bower_components/ogc-schemas/scripts/lib/WFS_1_1_0.js"></script>
+    <script src="bower_components/ogc-schemas/scripts/lib/WCS_1_0_0.js"></script>
+    <script src="bower_components/ogc-schemas/scripts/lib/WCS_1_1.js"></script>
+    <script src="bower_components/ogc-schemas/scripts/lib/Filter_2_0.js"></script>
+    <script src="bower_components/ogc-schemas/scripts/lib/Filter_1_1_0.js"></script>
+    <script src="bower_components/ogc-schemas/scripts/lib/OWS_1_1_0.js"></script>
+    <script src="bower_components/ogc-schemas/scripts/lib/GML_2_1_2.js"></script>
+    <script src="bower_components/ogc-schemas/scripts/lib/GML_3_1_1.js"></script>
+    <script src="bower_components/ogc-schemas/scripts/lib/SMIL_2_0.js"></script>
+    <script src="bower_components/ogc-schemas/scripts/lib/SMIL_2_0_Language.js"></script>
+    <script src="bower_components/w3c-schemas/scripts/lib/XLink_1_0.js"></script>
+     <script src="src/javascript/openLayers.3.5.0.debug.js"></script>
+    <!-- OpenLayers resources -->
+    <script src="./src/javascript/ol3-wpsbuilder.js"></script>
+  </head>
+
+
+  <body onload="wpsinit()">
+
+    <div id="map" class="map"></div>
+    <div id="popup" class="ol-popup">
+      <div id="popup-closer" class="ol-popup-closer">
+        <i class="mdi-navigation-close"></i>
+      </div>
+      <div>status</div>
+      <div id="popup-status">n/a</div>
+      <div>tienda</div>
+      <div id="popup-tiendas">n/a</div>
+
+      <input type="text" id="popup-value" placeholder="0-1"/><br/>
+    </div>
+    <div id="btnSelect" class="btnMenu btn-floating btn-large waves-effect waves-light teal" title ="select">
+      <i class="mdi-action-speaker-notes"></i>
+    </div>
+    <div id="btnEdit" class="btnMenu btn-floating btn-large waves-effect waves-light teal" title ="edit">
+      <i class="mdi-editor-mode-edit"></i>
+    </div>
+    <div id="btnDrawPoint" class="btnMenu btn-floating btn-large waves-effect waves-light teal" title ="Draw Point">
+      <i class="mdi-maps-place"></i>
+    </div>
+    <div id="btnDrawLine" class="btnMenu btn-floating btn-large waves-effect waves-light teal" title = "Draw Line">
+      <i class="mdi-social-share"></i>
+    </div>
+    <div id="btnDrawPoly" class="btnMenu btn-floating btn-large waves-effect waves-light teal" title ="Draw Poly">
+      <i class="mdi-device-signal-cellular-null"></i>
+    </div>
+    <div id="btnDelete" class="btnMenu btn-floating btn-large waves-effect waves-light teal" title="Delete">
+      <i class="mdi-action-delete"></i>
+    </div>
+    <div id="btnSkipPrev" class="btnMenu btn-floating btn-large waves-effect waves-light teal" title ="Skip to Previous">
+      <i class="mdi-av-skip-previous"></i>
+    </div>
+    <div id="btnRewind" class="btnMenu btn-floating btn-large waves-effect waves-light teal" title = "Rewind">
+      <i class="mdi-av-fast-rewind"></i>
+    </div>
+    <div id="btnPlay" class="btnMenu btn-floating btn-large waves-effect waves-light teal" title ="Play">
+      <i class="mdi-av-play-arrow"></i>
+    </div>
+    <div id="btnPlayNext" class="btnMenu btn-floating btn-large waves-effect waves-light teal" title ="Next">
+      <i class="mdi-av-skip-next"></i>
+    </div>
+    <div id="btnZoomIn" class="btn-floating btn-large waves-effect waves-light teal" title ="Zoom in">
+      <i class="mdi-content-add"></i>
+    </div>
+    <div id="btnZoomOut" class="btn-floating btn-large waves-effect waves-light teal" title ="Zoom out">
+      <i class="mdi-content-remove"></i>
+    </div>
+
+
+
+    <script type="text/javascript" src="src/javascript/ol3-wfs-t3.js"></script>
+
+  </body>
+</html>

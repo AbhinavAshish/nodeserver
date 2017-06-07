@@ -1,0 +1,25 @@
+{
+  "name": "tgis",
+  "description": "User interface for map display",
+  "main": "index.html",
+  "authors": [
+    "Abhinav Ashish"
+  ],
+  "license": "NCSU",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "w3c-schemas": "^1.4.0",
+    "ogc-schemas": "^2.6.1",
+    "jsonix": "^2.4.1"
+  }
+}
